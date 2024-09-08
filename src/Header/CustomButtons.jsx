@@ -38,7 +38,8 @@ const Container = styled(Box)(({ theme }) => ({
   },
 }));
 
-const LoginButton = styled(Button)``;
+const LoginButton = styled(Button)`
+`;
 
 const CustomButtons = () => {
   const [open, setOpen] = useState(false);
@@ -71,6 +72,7 @@ const CustomButtons = () => {
             background: "#FFFFFF",
             textTransform: "none",
             padding: "5px 40px",
+            margin:"15px",
             borderRadius: 2,
             fontWeight: "bold",
             fontFamily: "Inter",

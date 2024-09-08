@@ -2,9 +2,11 @@ import { Box, Button, Dialog, TextField, Typography,styled } from '@mui/material
 import { useState,useContext} from 'react';
 import {authenticateSignup,authenticateLogin} from '../service/Api.js'
 import { DataContext } from '../context/dataProvider.jsx';
+
+
 const Component = styled(Box)`
-  height: 70vh;
-  width: 90vh;`
+  height: 90vh;
+  width: 100vh;`
 
   const Image = styled(Box)`
   background: #2874f0 url(https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png ) center 85% no-repeat;
@@ -20,7 +22,7 @@ const Wrapper = styled(Box)`
 padding: 25px 35px;
 display: flex;
 flex: 1;
-overflow: auto;
+overflow:hidden;
 flex-direction: column;
 & > div, & > button, & > p {
     margin-top: 20px;
