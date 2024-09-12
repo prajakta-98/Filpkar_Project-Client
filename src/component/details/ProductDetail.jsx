@@ -82,7 +82,8 @@ const LeftContainer = styled(Box)(({ theme }) => ({
 
   return (
     <Component>
-      {product && Object.keys(product).length > 0 ? (
+      {
+      product && Object.keys(product).length > 0 ? (
         <Container container>
 
             <LeftContainer item lg={4} md={4} sm={8} xs={12}>

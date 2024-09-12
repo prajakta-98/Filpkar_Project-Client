@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Button, TextField, Typography, styled } from '@mui/material';
 import SuccessModal from './SuccessModal'; // Import the SuccessModal component
-
+import { useCart } from '../../context/CartContext';
 const Container = styled(Box)`
   padding: 20px;
   background: #fff;
@@ -31,7 +31,7 @@ const CheckoutPage = () => {
   const [cardExpiry, setCardExpiry] = useState('');
   const [cardCvv, setCardCvv] = useState('');
   const [orderPlaced, setOrderPlaced] = useState(false); // State to control the modal
-
+  const { clearCart } = useCart(); // Destructure the clearCart function
   const validateAddress = () => {
     return address.length > 10;
   };
@@ -77,6 +77,7 @@ const CheckoutPage = () => {
       return;
     }
     setOrderPlaced(true); // Show the success modal
+    clearCart();
   };
 
   return (
