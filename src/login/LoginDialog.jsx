@@ -35,6 +35,9 @@ background: #fb641b;
 color:#fff;
 height: 48px;
 border-radius: 2px;
+&:hover {
+    background-color: #fb641b;
+  }
 `;
 
 const RequstOTP = styled(Button)`
@@ -153,7 +156,7 @@ const loginUser = async () => {
        <Wrapper>
 {/* gives error i username or pass is wrong */}
         <TextField variant="standard" onChange={(e) =>onValueChange(e)} name='username' label='Enter username' />
-        { error && <Error>Please enter valid Email ID/Mobile number</Error> }  
+        { error && <Error>Please enter valid User name.</Error> }  
         
         <TextField variant="standard" onChange={(e) =>onValueChange(e)} name='password' label='Enter Password' />
        <Text>By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</Text>
