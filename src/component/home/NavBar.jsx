@@ -34,8 +34,8 @@ const NavBar = () => {
  <Component>
 {
   // geting data from navData
-navData.map((data)=>(
-    <Container>
+navData.map((data,index)=>(
+    <Container key={index}>
     <img src={data.url} alt='nav' style={{ width: 64 }}></img>
     <Text style={{fontFamily:'Inter' }}>{data.text}</Text> 
  </Container>

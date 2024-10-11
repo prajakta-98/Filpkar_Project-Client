@@ -26,12 +26,14 @@ function Product() {
   }
 
   const Container = styled(Box)`
-    margin-top: 10px;
+    margin-top: 18px;
     background: #fff;
   `;
 
   const ViewAllButton = styled(Button)`
-    margin-left: auto;
+    top:-44px;
+    margin-inline:8px;
+    float: right;
     background-color: #2874f0;
     border-radius: 2px;
     font-size: 13px;
@@ -85,7 +87,7 @@ function Product() {
                 height="140"
                 image={product?.url || '/placeholder-image-url.png'} // Use a placeholder if the image URL is missing
                 alt={product?.title?.shortTitle || 'Product Image'}
-                sx={{ objectFit: 'contain', paddingTop: '10px', border: '#e0e0e0' }}
+                sx={{ objectFit: 'contain', paddingTop: '32px', border: '#e0e0e0' }}
               />
               <CardContent>
                 <Typography variant="body2" sx={{ fontWeight: 600 }}>

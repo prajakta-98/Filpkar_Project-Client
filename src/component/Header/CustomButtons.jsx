@@ -1,4 +1,4 @@
-import { Box, Button, Typography, styled } from "@mui/material";
+import { Badge, Box, Button, Typography, styled } from "@mui/material";
 import { ShoppingCart } from "@mui/icons-material";
 import { useState, useContext } from "react";
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
@@ -83,17 +83,18 @@ const CustomButtons = () => {
           Login
         </LoginButton>
       )}
-      <Typography style={{ marginTop: 3, width: 136 }}>
+      <Typography style={{ marginTop: 3, width: 142 }}>
         Become a Seller
       </Typography>
       <Typography style={{ marginTop: 3 }}> More </Typography>
 
       {/* Handle the click event on the cart */}
       <Container onClick={handleCartClick}>
-        
+        <Badge badgeContent={cartItems.length} color="primary">
         <ShoppingCart />
+        </Badge>
         <Typography>
-          Cart ({cartItems.length || 0}) {/* Display the cart count */}
+           Cart  
         </Typography>
       </Container>
 
