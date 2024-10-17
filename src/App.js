@@ -1,4 +1,4 @@
-import Header from "./Header/Header";
+import Header from "./component/Header/Header";
 import Home from "./component/home/Home";
 import { Box } from "@mui/material";
 import DataProvider from "./context/dataProvider";
@@ -14,13 +14,13 @@ function App() {
   <BrowserRouter>
         <DataProvider>
           <CartProvider>
-            <Header />
+         <Header/>
             <Box style={{ marginTop: 54 }}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/product/:id" element={<ProductDetail />} />  
                 <Route path="/cart" element={<CartPages />} /> 
-                 <Route path="/empty-cart" element={<EmtptyCart />} /> 
+                <Route path="/empty-cart" element={<EmtptyCart />} /> 
                  <Route path="/checkout" element={<CheckoutPage />} />
               </Routes>
             </Box>

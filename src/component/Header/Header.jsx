@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { AppBar, Toolbar, Box, Typography,IconButton, Drawer, List,ListItem } from "@mui/material";
 import { styled } from "@mui/system";
 import Search from "./Search";
-import CustomButtons from "../Header/CustomButtons";
-import { useCart } from '../context/CartContext';
+import CustomButtons from "./CustomButtons";
+// import { useCart } from '../../context/CartContext';
 
 import { Menu } from '@mui/icons-material';
 import { Link } from "react-router-dom";
@@ -47,7 +47,7 @@ const Header = () => {
   const logoURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png';
   const subURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png';
   const [open, setOpen] = useState(false);
-const {cartItems} = useCart();
+  // const {cartItems} = useCart();
 
   const handleClose = () => {
       setOpen(false);

@@ -1,12 +1,12 @@
 import { Badge, Box, Button, Typography, styled } from "@mui/material";
 import { ShoppingCart } from "@mui/icons-material";
 import { useState, useContext } from "react";
-import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 // Components
-import LoginDailog from "../login/LoginDialog";
-import { DataContext } from "../context/dataProvider";
+import LoginDailog from "../../login/LoginDialog";
+import { DataContext } from "../../context/dataProvider";
 import Profile from "./Profile";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 
 const Wrapper = styled(Box)(({ theme }) => ({
   margin: '0 3% 0 auto',
