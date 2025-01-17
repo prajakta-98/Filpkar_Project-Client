@@ -1,13 +1,13 @@
-import Header from "./component/Header/Header";
-import Home from "./component/home/Home";
+import Header from "./component/Header/Header.jsx";
+import Home from "./component/home/Home.jsx";
 import { Box } from "@mui/material";
-import DataProvider from "./context/dataProvider";
-import ProductDetail from "./component/details/ProductDetail";
+import DataProvider from "./context/dataProvider.jsx";
+import ProductDetail from "./component/details/ProductDetail.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { CartProvider } from "./context/CartContext";
-import CartPages from "./component/cart/CartPages";
- import EmtptyCart from "./component/cart/EmptyCart";
- import CheckoutPage from "./component/cart/CheckoutPage";
+import { CartProvider } from "./context/CartContext.jsx";
+import CartPages from "./component/cart/CartPages.jsx";
+ import EmtptyCart from "./component/cart/EmptyCart.jsx";
+ import CheckoutPage from "./component/cart/CheckoutPage.jsx";
 function App() {
   return (
     <>
